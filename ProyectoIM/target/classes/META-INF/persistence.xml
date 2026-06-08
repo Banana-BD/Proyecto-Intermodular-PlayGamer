@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence" version="3.0">
+  <persistence-unit name="paquete">
+    <class>paquete.Categoria</class>
+    <class>paquete.Cliente</class>
+    <class>paquete.Empleado</class>
+    <class>paquete.Equipo</class>
+    <class>paquete.Juego</class>
+    <class>paquete.Limpieza</class>
+    <class>paquete.Mantenimiento</class>
+    <class>paquete.Reserva</class>
+    <class>paquete.Tienda</class>
+    <properties>
+      <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3308/"/>
+      <property name="jakarta.persistence.jdbc.user" value="root"/>
+      <property name="jakarta.persistence.jdbc.password" value="1234"/>
+
+      <property name="hibernate.dialect" value="org.hibernate.dialect.MySQLDialect"/>
+      <property name="hibernate.show_sql" value="true"/>
+      <property name="hibernate.format_sql" value="true"/>
+    </properties>
+  </persistence-unit>
+</persistence>
